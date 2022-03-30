@@ -38,7 +38,7 @@ public class Main {
 
         System.out.println("Welcome, please provide a valid transport type (AIR, GROUND, SEA), put EXIT to finish.");
         String option = sc.nextLine();
-        do {
+        while (!option.equals("EXIT")) {
             try {
                 Type type = Type.valueOf(option);
                 switch (type) {
@@ -68,10 +68,7 @@ public class Main {
             System.out.println();
             System.out.println("** Please provide another transport type (AIR, GROUND, SEA), put EXIT to finish.");
             option = sc.nextLine();
-        } while (!option.equals("EXIT"));
-
-
+        }
     }
-
 }
 
