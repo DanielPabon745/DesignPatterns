@@ -1,10 +1,10 @@
-package building.factory.factory.creator;
+package building.factory.factory.concrete;
 
 import building.factory.factory.Logistic;
 import building.factory.product.Transport;
-import building.factory.product.impl.MaritimeTransportation;
+import building.factory.product.concrete.MaritimeTransportation;
 
-public class MaritimeTransportationCreator extends Logistic {
+public class MaritimeTransportationLogistic extends Logistic {
     @Override
     public Transport createTransport() {
         return new MaritimeTransportation();

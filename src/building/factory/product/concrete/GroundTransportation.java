@@ -1,4 +1,4 @@
-package building.factory.product.impl;
+package building.factory.product.concrete;
 
 import building.factory.product.Transport;
 

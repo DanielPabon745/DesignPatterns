@@ -1,9 +1,9 @@
 package building.factory;
 
 import building.factory.factory.Logistic;
-import building.factory.factory.creator.AirTransportationCreator;
-import building.factory.factory.creator.GroundTransportationCreator;
-import building.factory.factory.creator.MaritimeTransportationCreator;
+import building.factory.factory.concrete.AirTransportationLogistic;
+import building.factory.factory.concrete.GroundTransportationLogistic;
+import building.factory.factory.concrete.MaritimeTransportationLogistic;
 import building.factory.product.Transport;
 
 import java.util.Scanner;
@@ -43,19 +43,19 @@ public class Main {
                 Type type = Type.valueOf(option);
                 switch (type) {
                     case AIR -> {
-                        logistic = new AirTransportationCreator();
+                        logistic = new AirTransportationLogistic();
                         logistic.doSomething();
                         Transport airTransport = logistic.createTransport();
                         airTransport.deliver();
                     }
                     case GROUND -> {
-                        logistic = new GroundTransportationCreator();
+                        logistic = new GroundTransportationLogistic();
                         logistic.doSomething();
                         Transport groundTransport = logistic.createTransport();
                         groundTransport.deliver();
                     }
                     case SEA -> {
-                        logistic = new MaritimeTransportationCreator();
+                        logistic = new MaritimeTransportationLogistic();
                         logistic.doSomething();
                         Transport maritimeTransport = logistic.createTransport();
                         maritimeTransport.deliver();
