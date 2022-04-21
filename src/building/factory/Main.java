@@ -63,7 +63,7 @@ public class Main {
                     default -> System.out.println("You input a not valid transport type");
                 }
             } catch (IllegalArgumentException exception) {
-                System.out.println("You input a not valid transport type");
+                System.out.println("Your input is not a valid transport type");
             }
             System.out.println();
             System.out.println("** Please provide another transport type (AIR, GROUND, SEA), put EXIT to finish.");

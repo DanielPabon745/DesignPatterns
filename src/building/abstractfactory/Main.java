@@ -73,7 +73,7 @@ public class Main {
                 System.out.printf("Modern couch is comfortable? R/ %b. %n", couch.isComfortable());
 
             } catch (IllegalArgumentException e) {
-                System.out.println("You input a not valid value.");
+                System.out.println("Your input is not a valid value.");
             }
 
             System.out.println();
